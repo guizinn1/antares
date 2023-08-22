@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans:wght@400;700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans';
+}
+
+body{
+    background-color: pink;
+    background-image: url('assets/fundo.jpg')
+}
+
+h1{
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    color: rgb(255, 49, 83)
+   
+}
+
+form{
+
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #f3f3f3;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056; 
+
+}
+
+main {
+
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+    }
+
+.left{
+  
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+img{
+    max-height: 80%;
+    
+}
+
+.right{
+   
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+   
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+
+}
+
+.card > h1{
+    color: rgb(255, 49, 83) ;
+    font-weight: 600;
+ }
+
+.textfield{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: pink;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #0000002d;
+    outline: none;
+    border: 2px solid transparent;
+
+}
+
+.textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+input:focus{
+    border-color:rgb(255, 49, 83);
+}
+
+.textfield i {
+
+    margin: 5px;
+    padding-top: 3px;
+
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-login{
+    width: 30%;
+    padding: 16px 0px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #f3f3f3;
+    background: rgb(255, 49, 83) ;
+    cursor: pointer;
+    box-shadow: 0px 10px 
+    40px -12px #00008052;
+
+}
+
+.btn-login:hover{
+    transition: background 1s;
+    background: pink;
+}
+
+img {
+    width: 800px;
+    height: 800px;
+
+}
