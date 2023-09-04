@@ -22,18 +22,18 @@
         <ul class="nav-links">
 
             <li class="item-menu">
-                <a href="#">
-                    <i class="bi bi-house"></i>
-                    <span class="text-list">
+                <a href="#" class="home">
+                    <i class="bi bi-house home"></i>
+                    <span class="text-list home">
                         Home
                     </span>
                 </a>
             </li>
 
             <li class="item-menu">
-                <a href="#">
-                    <i class="bi bi-bar-chart-line"></i>
-                    <span class="text-list">
+                <a href="#" class="dashboard">
+                    <i class="bi bi-bar-chart-line dashboard"></i>
+                    <span class="text-list dashboard">
                         Dashboard
                     </span>
                 </a>
@@ -41,9 +41,9 @@
 
             <li class="item-menu">
                 <div class="icon-li">
-                    <a href="#" class="icones">
-                            <i class="bi bi-person-vcard"></i>
-                        <span class="text-list">
+                    <a href="#" class="icones cliente">
+                            <i class="bi bi-person-vcard cliente"></i>
+                        <span class="text-list cliente">
                             Cliente
                         </span>
                             <i class="bi bi-arrow-down-short"></i>
@@ -51,8 +51,8 @@
 
                     <ul class="sub-menu">
 
-                        <li><a href="#">Consultar Cliente</a></li>
-                        <li><a href="#">Cadastrar Cliente</a></li>
+                        <li><a href="#" class="cliente">Consultar Cliente</a></li>
+                        <li><a href="#" class="cliente">Cadastrar Cliente</a></li>
 
                     </ul>
 
@@ -60,9 +60,9 @@
             </li>
             <li class="item-menu">
                 <div class="icon-li">
-                    <a href="#" class="icones">
-                            <i class="bi bi-box-fill"></i>
-                        <span class="text-list">
+                    <a href="#" class="icones estoque">
+                            <i class="bi bi-box-fill estoque"></i>
+                        <span class="text-list estoque">
                             Estoque
                         </span>
                             <i class="bi bi-arrow-down-short"></i>
@@ -70,8 +70,8 @@
 
                     <ul class="sub-menu">
 
-                        <li><a href="#">Consultar Produto</a></li>
-                        <li><a href="#">Cadastrar Produto</a></li>
+                        <li><a href="#" class="estoque">Consultar Produto</a></li>
+                        <li><a href="#" class="estoque">Cadastrar Produto</a></li>
 
                     </ul>
 
@@ -79,10 +79,10 @@
             </li>
             <li class="item-menu">
                 <div class="icon-li">
-                    <a href="#" class="icones">
+                    <a href="#" class="icones financeiro">
             
-                        <i class="bi bi-bank"></i>
-                        <span class="text-list">
+                        <i class="bi bi-bank financeiro"></i>
+                        <span class="text-list financeiro">
                             Financeiro
                         </span>
                       
@@ -92,8 +92,8 @@
 
                     <ul class="sub-menu">
 
-                        <li><a href="#">Consultar Movimento</a></li>
-                        <li><a href="#">Cadastrar Movimento</a></li>
+                        <li><a href="#" class="financeiro">Consultar Movimento</a></li>
+                        <li><a href="#" class="financeiro">Cadastrar Movimento</a></li>
 
                     </ul>
 
@@ -102,10 +102,39 @@
 
         </ul>
 
-
     </nav>
 
+    <div id="conteudo">
 
+
+
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+
+    $(".home").click(function(){
+        $("#conteudo").load("pages/home.html");
+    });
+
+    $(".dashboard").click(function(){
+        $("#conteudo").load("pages/dashboard.html");
+    });
+
+    $(".cliente").click(function(){
+        $("#conteudo").load("pages/cliente.html");
+    });
+
+    $(".estoque").click(function(){
+        $("#conteudo").load("pages/estoque.html");
+    });
+
+    $(".financeiro").click(function(){
+        $("#conteudo").load("pages/financeiro.html");
+    });
+
+</script>
 
 </body>
 
